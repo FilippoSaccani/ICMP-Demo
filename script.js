@@ -1,7 +1,7 @@
 //FILIPPO SACCANI
-const pc1 = {nome: "PC1", mac: "0000.0000.0000.AAAA", ip: "192.168.1.2", table: [["0000.0000.0000.BBBB", "192.168.1.3"], ["0000.0000.0000.AAAA", "192.168.1.2"]]};
-const pc2 = {nome: "PC2", mac: "0000.0000.0000.BBBB", ip: "192.168.1.3", table: [["0000.0000.0000.AAAA", "192.168.1.2"], ["0000.0000.0000.BBBB", "192.168.1.3"]]};
-const switch1 = {nome: "SWITCH1", table: [[0, "0000.0000.0000.AAAA"], [1, "0000.0000.0000.BBBB"]]};
+const pc1 = {nome: "PC1", mac: "0000.0000.AAAA", ip: "192.168.1.2", table: [["0000.0000.BBBB", "192.168.1.3"], ["0000.0000.AAAA", "192.168.1.2"]]};
+const pc2 = {nome: "PC2", mac: "0000.0000.BBBB", ip: "192.168.1.3", table: [["0000.0000.AAAA", "192.168.1.2"], ["0000.0000.BBBB", "192.168.1.3"]]};
+const switch1 = {nome: "SWITCH1", table: [[0, "0000.0000.AAAA"], [1, "0000.0000.BBBB"]]};
 let terminal = {utente: null, cronologia1: "", cronologia2: ""};
 let running = false;
 
