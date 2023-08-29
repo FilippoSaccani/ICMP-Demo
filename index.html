@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ICMP</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="Immagini/switch_alt.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>DIMOSTRAZIONE ICMP/PING</h1>
+
+        <div id="guideContainer">
+            <div id="guide">
+                <h3>
+                    Dimostrazione del protocollo ICMP con comando "ping".<br><br>
+                </h3>
+                <ul>
+                    <li>La simulazione non prevede l'esistenza del protocollo ARP.</li>
+                    <li>Le tabelle ARP dei computer e la tabella di routing dello switch sono precompilate e fisse.</li>
+                    <li>E' possibile cliccare sui dispositivi per avere informazioni aggiuntive.</li>
+                    <li>Il comando "ping" è eseguibile da terminale.</li>
+                </ul>
+            </div>
+            <div class="pulsante" id="connetti">
+                Connetti
+            </div>
+        </div>
+
+        <div id="container" hidden>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <div class="data" id="pc1data" hidden>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="data" id="switchtable" hidden></div>
+                    </td>
+                    <td colspan="2">
+                        <div class="data" id="pc2data" hidden></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="p1">
+                        <img src="Immagini/computer.png" alt="computer.png" id="pc1">
+                    </td>
+                    <td class="spacer">
+                        <hr id="left-connection">
+                        <span style="float: right">0</span>
+                    </td>
+                    <td id="sw">
+                        <img src="Immagini/switch_alt.png" alt="switch.png" id="switch">
+                    </td>
+                    <td class="spacer">
+                        <span style="float: left">1</span>
+                        <hr id="right-connection">
+                    </td>
+                    <td id="p2">
+                        <img src="Immagini/computer.png" alt="computer.png" id="pc2">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="data" id="arp1" hidden></div>
+                    </td>
+                    <td></td>
+                    <td colspan="2">
+                        <div class="data" id="arp2" hidden></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pulsante" id="pulsante1">Apri Terminale</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="pulsante" id="pulsante2">Apri Terminale</td>
+                </tr>
+            </table>
+
+            <div id="terminale" hidden>
+                <h4 id="header-terminale"></h4>
+                <p id="cronologia-terminale"></p>
+                <label>
+                    <input type="text" id="input-terminale" spellcheck="false">
+                </label>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
