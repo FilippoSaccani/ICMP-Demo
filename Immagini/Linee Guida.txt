@@ -1,6 +1,0 @@
-Dimostrazione del protocollo ICMP con comando ping.
-
-La simulazione non prevede l'esistenza del protocollo ARP.
-Le tabelle ARP dei computer e la tabella di switching dello switch sono precompilate e fisse.
-E' possibile cliccare sui dispositivi per avere informazioni aggiuntive.
-Il comando "ping" è eseguibile da terminale.
